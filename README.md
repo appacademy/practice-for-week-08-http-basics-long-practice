@@ -284,7 +284,7 @@ Response components:
 - Headers:
 - Body:
 
-### Ask for the edit review page
+### Ask for the edit product review page
 
 Request components:
 
