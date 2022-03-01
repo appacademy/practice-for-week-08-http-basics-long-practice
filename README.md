@@ -13,8 +13,8 @@ not to look at the contents of the server folder until you finish this
 exercise.**
 
 To start the server, run `npm start` inside of the **server** folder. This will
-allow you to make requests to [http://localhost:5000] using any client (browser
-and Postman).
+allow you to make requests to [http://localhost:5000] using any client, such as
+your browser.
 
 To stop the server from listening to requests, press `CTRL + c` for
 Windows/Linux or `CMD + c` for MacOS in the terminal that you started the server
@@ -61,9 +61,10 @@ operations:
 1. Make a prediction based off of your knowledge of HTTP request and response
    components and RESTful routes to determine what the request and response
    components of the given operation should be.
-2. Formulate the request using Postman and submit the request to see what the
-   response is. The e-commerce site is located at [http://localhost:5000].
-3. If the request or response is not what you predicted it to be, then update
+2. Perform the request in your browser. Navigating to the links
+   provided will help you fill out the documentation below. The e-commerce site 
+   is located at [http://localhost:5000].
+4. If the request or response is not what you predicted it to be, then update
    your documentation.
 
 If you don't see the response you want, or if you see an error status code, then
@@ -91,20 +92,9 @@ Response components:
   - Content-Type: text/html
 - Body: HTML page with navigation links to other pages
 
-To test this in Postman, create a request in Postman using the information
-above and send it.
-
-1. The method of the request in Postman should be GET.
-2. The root URL path in Postman should be [http://localhost:5000].
-3. The headers and body should be cleared in Postman.
-4. Send the request.
-5. Read the response and verify the components of the response.
-
-> If the request body is sent with the request in Postman, the response from
-> the server does not change. Do you understand why the response did not change
-> with the addition of a body in the request?
-
-![Postman Screenshot]
+In your browser, navigate to [http://localhost:5000]. Congratulations! You
+have performed a GET request to / showing the home page of our e-commerce
+website.
 
 ### Ask for a page that doesn't exist
 
@@ -368,4 +358,3 @@ Response components:
 
 [http://localhost:5000]: http://localhost:5000
 [starter]: https://github.com/appacademy/practice-for-week-08-http-basics-long-practice
-[Postman Screenshot]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-08/assets/postman_visual_Basic_HTTP.png
