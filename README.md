@@ -48,12 +48,9 @@ Below is a list of all the resources for this e-commerce site.
 
 ## Documentation
 
-In the file "documentation.md" is a list of operations on the e-commerce server that you can perform.
-For each operation, document what the components of the request should be and
-what you should expect from the response. Document all of the important components
-of the request and the response. You can use a Google doc, VSCode for editing
-a text/markdown file, or whatever text editor you want for creating the
-RESTful routes documentation for this e-commerce site.
+In the file "documentation.md" is a list of operations on the e-commerce 
+server that you can perform. Use "documentation.md" to document all of the 
+important components of the request and the response.
 
 Here's how to approach creating the documentation for the e-commerce server
 operations:

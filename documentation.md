@@ -33,30 +33,28 @@ website. Move on to the next request/response documentation.
 ### Ask for a page that doesn't exist
 
 Request components:
-- Method: GET
-- URL: /bananas
-- Headers: none
-- Body: none
+- Method:
+- URL:
+- Headers:
+- Body:
 
 Response components:
-- Status code: 404
+- Status code:
 - Headers: 
-    - Content-Type: text/html
-- Body: HTML with "Page Not Found" message
+- Body:
 
 ### Ask for the products list page
 
 Request components:
-- Method: GET
-- URL: /products
-- Headers: none
-- Body: none
+- Method:
+- URL:
+- Headers:
+- Body:
 
 Response components:
-- Status code: 200
+- Status code: 
 - Headers:
-    - Content-Type: text/html
-- Body: HTML showing all products
+- Body: 
 
 ### Ask for the product detail page
 
@@ -71,30 +69,28 @@ Here's an example product on the server:
 | categories  | "beauty", "electronics"                                    |
 
 Request components:
-- Method: GET
-- URL: /products/1
-- Headers: none
-- Body: none
+- Method:
+- URL: 
+- Headers: 
+- Body: 
 
 Response components:
-- Status code: 200
+- Status code: 
 - Headers:
-    - Content-Type: text/html
-- Body: HTML showing details for the product with id 1 
+- Body: 
 
 ### Ask for the create new product page
 
 Request components:
-- Method: GET
-- URL: /products/new
-- Headers: none
-- Body: none
+- Method:
+- URL:
+- Headers: 
+- Body: 
 
 Response components:
-- Status code: 200
+- Status code: 
 - Headers: 
-    - Content-Type: html/text
-- Body: HTML with a form for adding a product listing to the database
+- Body: 
 
 ### Submit a new product
 
@@ -116,28 +112,27 @@ Here are the categories on the server:
 | furniture   | Furniture      |
 | clothing    | Clothing       |
 
-* Note: In Chome dev tools, if the "body" of a request exists, it will appear in a new tab called "payload".
+* Note: In Chome dev tools, if the "body" of a request exists, it will appear 
+in the network tab as "payload".
 
 Request components:
-- Method: POST
-- URL: /products
+- Method: 
+- URL: 
 - Headers: 
-    - Content-Type: application/x-www-form-urlencoded
-- Body: URL encoded data from the form
+- Body: 
 
 Response components:
-- Status code: 302
+- Status code: 
 - Headers:
-    - Location: /products/:newProductId
-- Body: none
+- Body: 
 
 ### Ask for the edit product page
 
 Request components:
-- Method: GET
-- URL: /products/2/edit
-- Headers: none
-- Body: none
+- Method: 
+- URL: 
+- Headers: 
+- Body: 
 
 Response components:
 - Status code: 200
@@ -150,34 +145,30 @@ Response components:
 After successful submission, user should be looking at the product detail page.
 
 Request components:
-- Method: POST / PUT / PATCH
-- URL: /products/2
+- Method:
+- URL:
 - Headers: 
-    - Content-Type: application/x-www-form-urlencoded
-- Body: URL encoded data from the form
+- Body: 
 
 Response components:
-- Status code: 302
+- Status code: 
 - Headers:
-    - Location: /products/2
-- Body: none
+- Body: 
 
 ### Submit a delete for an existing product
 
 After successful submission, user should be looking at the products list page.
 
 Request components:
-- Method: POST / DELETE
-- URL: /products/2/delete, /products/2
+- Method: 
+- URL:
 - Headers: 
-    - Content-Type: application/x-www-form-urlencoded
-- Body: none
+- Body: 
 
 Response components:
-- Status code: 302
+- Status code: 
 - Headers:
-    - Location: /products
-- Body: none
+- Body: 
 
 ### Submit a new review for a product
 
@@ -193,92 +184,83 @@ Here's an example review on the server:
 | productId  | 1                      |
 
 Request components:
-- Method: POST
-- URL: /products/1/reviews
+- Method: 
+- URL: 
 - Headers:
-    - Content-Type: application/x-www-form-urlencoded
-- Body: URL encoded data from the form
+- Body:
 
 Response components:
-- Status code: 302
+- Status code: 
 - Headers: 
-    - Location: /products/1
-- Body: none
+- Body: 
 
 ### Ask for the edit review page for a product
 
 Request components:
-- Method: GET
-- URL: /reviews/1/edit
-- Headers: none
-- Body: none
+- Method: 
+- URL: 
+- Headers: 
+- Body: 
 
 Response components:
-- Status code: 200
+- Status code: 
 - Headers:
-    - Content-Type: text/html
-- Body: HTML showing a form to edit a review
+- Body: 
 
 ### Submit an edit for an existing review
 
 After successful submission, user should be looking at the product detail page.
 
 Request components:
-- Method: POST / PUT / PATCH
-- URL: /reviews/1
+- Method: 
+- URL: 
 - Headers:
-    - Content-Type: application/x-www-form-urlencoded
-- Body: URL encoded data from the form
+- Body: 
 
 Response components:
-- Status code: 302
+- Status code: 
 - Headers: 
-    - Location: /products/1
-- Body: HTML showing the details of the product including its reviews
+- Body:
 
 ### Submit a delete for an existing review
 
 After successful submission, user should be looking at the product detail page.
 
 Request components:
-- Method: POST / DELETE
-- URL: /reviews/1/delete, /reviews/1
+- Method:
+- URL: 
 - Headers: 
-    - Content-Type: application/x-www-form-urlencoded
-- Body: none
+- Body: 
 
 Response components:
-- Status code: 302
+- Status code: 
 - Headers: 
-    - Location: /products/1
-- Body: HTML showing details of product including any reviews. Should no longer include review just deleted.
+- Body: 
 
 ### Ask for all the products in a particular category by tag of the category
 
 Request components:
-- Method: GET
-- URL:  /categories/beauty/products
-- Headers: none
-- Body: none
+- Method: 
+- URL: 
+- Headers: 
+- Body: 
 
 Response components:
-- Status code: 200
+- Status code: 
 - Headers:
-    - Content-Type: text/html
-- Body: HTML showing all products with specified category
+- Body: 
 
 ### Ask for the best-selling product
 
 Look for clues in the HTML pages from the prior responses for what the route should be.
 
 Request components:
-- Method: GET
-- URL: /products/best-selling
-- Headers: none
-- Body: none
+- Method: 
+- URL: 
+- Headers: 
+- Body: 
 
 Response components:
-- Status code: 200
+- Status code: 
 - Headers:
-    - Content-Type: text/html
-- Body: HTML showing product details for the best-selling products
+- Body: 
