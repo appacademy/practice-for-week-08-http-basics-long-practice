@@ -16,7 +16,7 @@ Predicted Response components:
 - Body: HTML page with navigation links to other pages
 
 #### Step 2
-In your browser open the chrome dev tools, navigate to [http://localhost:5000] and make a GET request for the Home Page (type "/" into the URL after 5000 and hit "enter").
+In your browser open the Chrome dev tools, navigate to [http://localhost:5000], and make a GET request for the Home Page (type "/" into the URL after 5000 and hit "enter").
 Explore the "network" tab and find where you can compare your predicted request/response components to the actual components.
 
 #### Step 3
@@ -96,7 +96,7 @@ Response components:
 ### Submit a new product
 
 Remember, for a traditional HTML web server, whenever a successful `POST`
-request is sent to the server, the server should respond with a redirection to
+the request is sent to the server, the server should respond with a redirection to
 a page.
 
 After successful submission, user should be looking at the product detail page.
@@ -113,7 +113,7 @@ Here are the categories on the server:
 | furniture   | Furniture      |
 | clothing    | Clothing       |
 
-* Note: In Chome dev tools, if the "body" of a request exists, it will appear 
+* Note: In Chrome dev tools, if the "body" of a request exists, it will appear 
 in the network tab as "payload".
 
 Request components:
